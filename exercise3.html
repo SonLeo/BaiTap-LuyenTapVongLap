@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        let result = "Dãy 20 số Fibonacci đầu tiên: ";
+        let f1 = 1;
+        let f2 = 1;
+        let nextTerm;
+        for (let i = 1; i < 20; i++) {
+            result += f1 + "; ";
+            nextTerm = f1 + f2;
+            f1 = f2;
+            f2 = nextTerm;
+        }
+        result += f1 + "."
+        document.write(result);
+    </script>
+</body>
+</html>

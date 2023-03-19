@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+    <script>
+        let temperature = parseFloat(prompt("Nhập vào nhiệt độ: "));
+        
+        while (temperature > 100) {
+            temperature = parseFloat(prompt("Nhiệt độ quá cao, hãy giảm nhiệt độ: "));
+        }
+
+        while (temperature < 20) {
+            temperature = parseFloat(prompt("Nhiệt độ quá thấp, hãy tăng nhiệt độ: "));
+        }
+    </script>
+</body>
+</html>
